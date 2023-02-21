@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Optional;
 
 /**
- * https://www.techiedelight.com/find-minimum-depth-binary-tree/
+ * <a href="https://www.techiedelight.com/find-minimum-depth-binary-tree/">link</a>
  * <p>
  * <b>Find the minimum depth of a binary tree</b>
  * <p>
@@ -33,13 +33,8 @@ public class MinimumPathGetter {
 
             if (left == null && right == null) break;
 
-            if (left != null) {
-                queue.offer(new NodeWithDepth(left, candidate.getDepth() + 1));
-            }
-
-            if (right != null) {
-                queue.offer(new NodeWithDepth(right, candidate.getDepth() + 1));
-            }
+            if (left != null) queue.offer(new NodeWithDepth(left, candidate.getDepth() + 1));
+            if (right != null) queue.offer(new NodeWithDepth(right, candidate.getDepth() + 1));
         }
 
         return Optional.ofNullable(candidate)

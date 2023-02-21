@@ -3,7 +3,7 @@ package algorithms.binarytree;
 import model.Node;
 
 /**
- * https://www.techiedelight.com/split-binary-tree-into-two-trees/
+ * <a href="https://www.techiedelight.com/split-binary-tree-into-two-trees/">link</a>
  * <p>
  * <b>Check if removing an edge can split a binary tree into two equal size trees</b>
  * <p>

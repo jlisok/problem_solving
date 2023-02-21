@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.function.Consumer;
 
 /**
- * https://www.techiedelight.com/construct-complete-binary-tree-from-linked-list/
+ * <a href="https://www.techiedelight.com/construct-complete-binary-tree-from-linked-list/">link</a>
  * <p>
  * <b>Construct a complete binary tree from its linked list representation</b>
  * <p>

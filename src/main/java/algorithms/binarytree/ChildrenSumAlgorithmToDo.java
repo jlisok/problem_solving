@@ -3,7 +3,7 @@ package algorithms.binarytree;
 import model.Node;
 
 /**
- * https://www.techiedelight.com/check-children-sum-property-binary-tree/
+ * <a href="https://www.techiedelight.com/check-children-sum-property-binary-tree/">link</a>
  * <p>
  * <b>Check children-sum property in a binary tree</b>
  * <p>

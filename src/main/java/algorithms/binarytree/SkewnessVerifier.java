@@ -3,7 +3,7 @@ package algorithms.binarytree;
 import model.Node;
 
 /**
- * https://www.techiedelight.com/check-skewed-binary-tree/
+ * <a href="https://www.techiedelight.com/check-skewed-binary-tree/">link</a>
  * <p>
  * <b>Check if each node of a binary tree has exactly one child</b>
  * <p>

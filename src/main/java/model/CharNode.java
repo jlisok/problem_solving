@@ -1,40 +1,42 @@
 package model;
 
 
-public class Node {
-    private final int value;
-    private Node left;
-    private Node right;
+import java.util.Objects;
 
-    public Node(int value) {
+public class CharNode {
+    private final char value;
+    private CharNode left;
+    private CharNode right;
+
+    public CharNode(char value) {
         this.value = value;
         this.left = null;
         this.right = null;
     }
 
-    public Node(int value, Node left, Node right) {
+    public CharNode(char value, CharNode left, CharNode right) {
         this.value = value;
         this.left = left;
         this.right = right;
     }
 
-    public int getValue() {
+    public char getValue() {
         return value;
     }
 
-    public Node getLeft() {
+    public CharNode getLeft() {
         return left;
     }
 
-    public Node getRight() {
+    public CharNode getRight() {
         return right;
     }
 
-    public void setLeft(Node left) {
+    public void setLeft(CharNode left) {
         this.left = left;
     }
 
-    public void setRight(Node right) {
+    public void setRight(CharNode right) {
         this.right = right;
     }
 
@@ -43,14 +45,14 @@ public class Node {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        var thatNode = (Node) o;
+        var thatNode = (CharNode) o;
         return checkEquals(thatNode, this);
     }
 
-    private boolean checkEquals(Node node1, Node node2) {
+    private boolean checkEquals(CharNode node1, CharNode node2) {
         if (node1 == null && node2 == null) return true;
         if (node1 == null || node2 == null) return false;
-        if (node1.getValue() != node2.getValue()) return false;
+        if (!Objects.equals(node1.getValue(), node2.getValue())) return false;
 
         var leftEqual = checkEquals(node1.getLeft(), node2.getLeft());
         var rightEqual = checkEquals(node1.getRight(), node2.getRight());
