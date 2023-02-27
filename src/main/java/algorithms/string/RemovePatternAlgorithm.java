@@ -30,7 +30,7 @@ public class RemovePatternAlgorithm {
         for (int i = 0; i < input.length(); i++) {
             var current = input.charAt(i);
 
-            if (B_CHAR.equals(current) && !result.isEmpty() && A_CHAR.equals(result.charAt(lastIndex))) {
+            if (B_CHAR.equals(current) && result.length() != 0 && A_CHAR.equals(result.charAt(lastIndex))) {
                 result.deleteCharAt(lastIndex);
                 lastIndex--;
             } else if (!C_CHAR.equals(current)) {
