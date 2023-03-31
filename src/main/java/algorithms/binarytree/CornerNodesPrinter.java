@@ -5,7 +5,6 @@ import io.vavr.Tuple2;
 import model.Node;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -28,7 +27,7 @@ public class CornerNodesPrinter {
         return corners.entrySet().stream()
                 .flatMap(entry -> Stream.of(entry.getValue()._1(), entry.getValue()._2()))
                 .filter(Objects::nonNull)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     private void identifyCorner(Node node, Map<Integer, Tuple2<Integer, Integer>> corners, int level) {
