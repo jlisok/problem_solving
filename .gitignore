@@ -3,5 +3,5 @@
 *.hprof
 *.log
 *.jar
-/.gradle*
-/.idea
+.gradle*
+.idea*
