@@ -21,7 +21,7 @@ import java.util.Objects;
 public class PalindromLinkedListVerifier {
 
     public boolean checkIfPalindromString(LinkedList<String> palindromCandidate) {
-        if (palindromCandidate == null || palindromCandidate.size() == 0) return false;
+        if (palindromCandidate == null || palindromCandidate.isEmpty()) return false;
 
         var leftRightStringBuilder = new StringBuilder();
         palindromCandidate.forEach(leftRightStringBuilder::append);
@@ -42,7 +42,7 @@ public class PalindromLinkedListVerifier {
     }
 
     public boolean checkIfPalindromRecursive(LinkedList<String> palindromCandidate) {
-        if (palindromCandidate == null || palindromCandidate.size() == 0) return false;
+        if (palindromCandidate == null || palindromCandidate.isEmpty()) return false;
 
         var ascendingBuilder = new StringBuilder();
         var descendingBuilder = new StringBuilder();
