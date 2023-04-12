@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+ext {
+    junitVersion = '5.8.2'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    implementation group: 'io.vavr', name: 'vavr', version: '0.10.4'
+
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
+    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '4.6.1'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.6.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
