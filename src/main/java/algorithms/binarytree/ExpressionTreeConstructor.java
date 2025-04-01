@@ -79,7 +79,7 @@ public class ExpressionTreeConstructor {
         var right = node.getRight();
         var hasChildren = !(left == null && right == null);
 
-        if (hasChildren) builder.append(PARENTHESES.get(0));
+        if (hasChildren) builder.append(PARENTHESES.getFirst());
 
         printInorder(left, builder);
         builder.append(node.getValue());

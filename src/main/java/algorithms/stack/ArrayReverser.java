@@ -15,10 +15,7 @@ public class ArrayReverser {
         if (elements == null || elements.isEmpty()) return Collections.emptyList();
 
         var result = new LinkedList<Integer>();
-
-        for (Integer element : elements) {
-            result.push(element);
-        }
+        elements.forEach(result::push);
 
         return result;
     }

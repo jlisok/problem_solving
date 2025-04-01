@@ -1,8 +1,10 @@
 package model;
 
 
+import java.util.Optional;
+
 public class Node {
-    private final int value;
+    private int value;
     private Node left;
     private Node right;
 
@@ -16,6 +18,14 @@ public class Node {
         this.value = value;
         this.left = left;
         this.right = right;
+    }
+
+    public static Node ofStructure(int value, Integer leftValue, Integer rightValue) {
+        var node = new Node(value);
+        Optional.ofNullable(leftValue).map(Node::new).ifPresent(node::setLeft);
+        Optional.ofNullable(rightValue).map(Node::new).ifPresent(node::setRight);
+
+        return node;
     }
 
     public int getValue() {
@@ -36,6 +46,10 @@ public class Node {
 
     public void setRight(Node right) {
         this.right = right;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     @Override

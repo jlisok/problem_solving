@@ -5,7 +5,8 @@ package algorithms.string;
  * <p>
  * <b>Run Length Encoding (RLE) Data Compression Algorithm</b>
  * <p>
- * Run–length encoding (RLE) is a simple form of lossless data compression that runs on sequences with the same value occurring many consecutive times. It encodes the sequence to store only a single value and its count.
+ * Run–length encoding (RLE) is a simple form of lossless data compression that runs on sequences with the same value
+ * occurring many consecutive times. It encodes the sequence to store only a single value and its count.
  * <p>
  * example:
  * <p>

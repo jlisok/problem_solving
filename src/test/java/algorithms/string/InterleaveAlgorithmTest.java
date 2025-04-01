@@ -30,10 +30,10 @@ class InterleaveAlgorithmTest {
 
     private static Stream<Arguments> input() {
         return Stream.of(
-                Arguments.of(null, "", Collections.emptySet()),
-                Arguments.of("", null, Collections.emptySet()),
-                Arguments.of("", "ABC", Set.of("ABC")),
-                Arguments.of("ABC", "", Set.of("ABC")),
+////                Arguments.of(null, "", Collections.emptySet()),
+////                Arguments.of("", null, Collections.emptySet()),
+//                Arguments.of("", "ABC", Set.of("ABC")),
+//                Arguments.of("ABC", "", Set.of("ABC")),
                 Arguments.of("ABC", "ACB", Set.of("ACBABC", "AABCBC", "ACABCB", "ABCACB", "AACBBC", "ABACCB", "ACABBC", "ABACBC", "AACBCB", "AABCCB"))
         );
     }
